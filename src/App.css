@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand: #00D1FF;   /* Cyber Blue */
+  --color-surface: #0B0E14; /* Deep Black background */
+  --color-panel: #161B22;   /* Card/Sidebar Gray */
+  --color-accent: #FFD700;  /* Gold for 'Total Amount' */
+}
+
+/* 2026 High-Performance UI Reset */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color-surface);
+  color: white;
+  font-family: 'Inter', system-ui, sans-serif;
+  user-select: none; /* Prevents text selection during fast billing */
+  overflow: hidden; /* Desktop apps shouldn't have browser scrollbars */
+}
